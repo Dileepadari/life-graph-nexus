@@ -40,8 +40,8 @@ const Navigation = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button variant="hero" size="sm">
-              Get Started
+            <Button variant="hero" size="sm" asChild>
+              <a href="/auth">Get Started</a>
             </Button>
           </div>
 
@@ -70,8 +70,8 @@ const Navigation = () => {
                   {item.label}
                 </a>
               ))}
-              <Button variant="hero" size="sm" className="self-start">
-                Get Started
+              <Button variant="hero" size="sm" className="self-start" asChild>
+                <a href="/auth">Get Started</a>
               </Button>
             </div>
           </div>
